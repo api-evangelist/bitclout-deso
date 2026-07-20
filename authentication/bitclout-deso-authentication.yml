@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.deso.org/deso-identity/identity
+docs: https://docs.deso.org/deso-identity/identity/concepts
+summary:
+  model: blockchain-keypair
+  types:
+  - derived-keys
+  - message-signing
+  api_key_in: []
+  oauth2_flows: []
+  notes: DeSo does not use API keys, OAuth2, or bearer tokens. Data (read) endpoints
+    on a node are public and unauthenticated. Write operations are authenticated by
+    cryptographically signing transactions with the user's key material via the DeSo
+    Identity service.
+schemes:
+- name: OwnerKeypair
+  type: blockchain-keypair
+  description: Every DeSo account is an ed25519/secp256k1 keypair. The owner public
+    key (Base58Check) identifies the account; the owner private key can sign any transaction
+    and move funds.
+  sources:
+  - https://docs.deso.org/deso-identity/identity/concepts
+- name: DerivedKey
+  type: scoped-signing-key
+  description: Apps request a derived key with a TransactionSpendingLimit that scopes
+    which transaction types (and spend amounts) it may authorize. Users approve the
+    limits once; the app then signs transactions on the user's behalf without ever
+    touching the owner key.
+  scope_object: TransactionSpendingLimitResponse
+  sources:
+  - https://docs.deso.org/deso-identity/identity/concepts
+  - https://docs.deso.org/deso-backend/api
+- name: Identity Service
+  type: signing-service
+  description: The DeSo Identity Service (iframe + window API) hides key management,
+    login, permission approval, and transaction signing behind a browser API so apps
+    never handle raw private keys.
+  sources:
+  - https://docs.deso.org/deso-identity/window-api/basics
+  - https://docs.deso.org/deso-identity/iframe-api/basics
