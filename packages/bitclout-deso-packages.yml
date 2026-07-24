@@ -1,0 +1,49 @@
+generated: '2026-07-18'
+method: searched
+source: npm, PyPI, pkg.go.dev, github.com/deso-protocol
+packages:
+- language: typescript
+  registry: npm
+  name: deso-protocol
+  url: https://www.npmjs.com/package/deso-protocol
+  install: npm i deso-protocol
+  version: 3.4.2
+  license: MIT
+  repository: https://github.com/deso-protocol/deso-js
+  official: true
+  description: Client-side TypeScript/JavaScript SDK for building web3 applications
+    on the DeSo blockchain (identity, transaction construction, signing, broadcast).
+- language: python
+  registry: github
+  name: deso-python-sdk
+  url: https://github.com/deso-protocol/deso-python-sdk
+  install: git clone https://github.com/deso-protocol/deso-python-sdk
+  official: true
+  description: Official single-file Python SDK for constructing, signing, and submitting
+    DeSo transactions. Not published to PyPI; distributed as source.
+- language: go
+  registry: pkg.go.dev
+  name: github.com/deso-protocol/rosetta-deso
+  url: https://pkg.go.dev/github.com/deso-protocol/rosetta-deso
+  install: go get github.com/deso-protocol/rosetta-deso
+  official: true
+  description: Rosetta API implementation for DeSo — the Coinbase Rosetta standard
+    for exchange/wallet integration.
+- language: typescript
+  registry: github
+  name: deso-ui
+  url: https://github.com/deso-protocol/deso-ui
+  install: git clone https://github.com/deso-protocol/deso-ui
+  license: MIT
+  official: true
+  description: DeSo UI component library (React/TypeScript) for building DeSo-native
+    social interfaces.
+- language: python
+  registry: pypi
+  name: deso
+  url: https://pypi.org/project/deso/
+  install: pip install deso
+  version: 2.3.6
+  official: false
+  description: Community Python module (DeSo.py by ItsAditya) wrapping node.deso.org
+    read/write endpoints. Not first-party.

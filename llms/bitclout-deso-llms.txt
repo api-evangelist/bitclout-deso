@@ -1,0 +1,133 @@
+# DeSo • Decentralized Social Media Blockchain
+
+## DeSo
+
+- [DeSo Vision](https://docs.deso.org/readme.md): Decentralized Social is empowering an internet that’s creator-led, user owned, and open to millions of developers around the world to build off one another.
+- [DeSo Tokenomics](https://docs.deso.org/deso-tokenomics.md)
+- [No Equity, Just Coins and Code](https://docs.deso.org/deso-tokenomics/no-equity-just-coins-and-code.md)
+- [Current DESO Supply](https://docs.deso.org/deso-tokenomics/current-deso-supply.md)
+- [Initial DESO Distribution](https://docs.deso.org/deso-tokenomics/initial-deso-distribution.md)
+- [DESO Sinks](https://docs.deso.org/deso-tokenomics/deso-sinks.md)
+- [The BMF: Burn-Maximizing Fee Mechanism](https://docs.deso.org/deso-tokenomics/the-bmf-burn-maximizing-fee-mechanism.md)
+- [Designed for the End-Game](https://docs.deso.org/deso-tokenomics/designed-for-the-end-game.md)
+- [DeSo Governance](https://docs.deso.org/deso-governance.md)
+- [DeSo Tutorial (Build Apps)](https://docs.deso.org/deso-tutorial-build-apps.md): Everything you need to know to build and deploy your first DeSo app.
+- [Node Architecture Overview](https://docs.deso.org/architecture-overview.md)
+- [Setup a Node & Frontend Locally](https://docs.deso.org/architecture-overview/dev-setup.md)
+- [Making Your First Changes](https://docs.deso.org/architecture-overview/making-your-first-changes.md)
+- [DeSo Roadmap](https://docs.deso.org/deso-roadmap.md)
+- [DeSo Tech Stack](https://docs.deso.org/deso-tech-stack.md): An overview of tools & resources for building on DeSo
+- [DeSo Applications](https://docs.deso.org/deso-applications.md): An overview of ideas and applications in the DeSo ecosystem.
+- [Bare Metal](https://docs.deso.org/deso-blockchain/bare-metal.md): Social features on highly-scalable bare-metal architecture
+- [Scaling Roadmap](https://docs.deso.org/deso-blockchain/consensus-pow-and-pos.md): Scaling decentralized social networks with an innovative PoS roadmap
+- [Content Moderation](https://docs.deso.org/deso-blockchain/content-moderation.md): Creating a new open-economy of scale for moderation via global participation
+- [Infinite-State](https://docs.deso.org/deso-blockchain/infinite-state.md): The incredible cost advantages of storage-heavy blockchains
+- [On-Chain Data](https://docs.deso.org/deso-blockchain/on-chain-data.md): Defending against the risk of censorship via maximum on-chain transparency
+- [Smart Services](https://docs.deso.org/deso-blockchain/smart-services.md): The future of cross-chain interoperability
+- [User Security](https://docs.deso.org/deso-blockchain/privacy-and-security.md): Not your keys, not your content
+- [Associations](https://docs.deso.org/deso-features/associations.md)
+- [Creator Coins](https://docs.deso.org/deso-features/creator-coins.md)
+- [Feeds & Moderation](https://docs.deso.org/deso-features/feeds-and-moderation.md)
+- [Social NFTs](https://docs.deso.org/deso-features/social-nfts.md)
+- [Social Tipping](https://docs.deso.org/deso-features/social-tipping.md)
+- [Identity: Overview](https://docs.deso.org/deso-identity/identity.md)
+- [Core Concepts](https://docs.deso.org/deso-identity/identity/concepts.md): Fundamentals of working with the DeSo Identity Service
+- [Mobile Integration](https://docs.deso.org/deso-identity/identity/mobile-integration.md): Integrating with the DeSo Identity on Mobile.
+- [Identity: iFrame API](https://docs.deso.org/deso-identity/iframe-api.md): Documentation on the iframe Context API
+- [Overview](https://docs.deso.org/deso-identity/iframe-api/basics.md): Guide on integrating with the DeSo Identity iframe API
+- [Endpoints](https://docs.deso.org/deso-identity/iframe-api/endpoints.md): List of DeSo Identity iframe API endpoints
+- [Identity: Window API](https://docs.deso.org/deso-identity/window-api.md): Documentation on the Window Context API
+- [Overview](https://docs.deso.org/deso-identity/window-api/basics.md): Guide on integrating with the DeSo Identity Window API
+- [Endpoints](https://docs.deso.org/deso-identity/window-api/endpoints.md): List of DeSo Identity Window API endpoints
+- [Frontend: Get Started](https://docs.deso.org/deso-frontend/exchange-listing-api.md): Get started building on DeSo with our Javascript SDK
+- [Frontend: React Example](https://docs.deso.org/deso-frontend/exchange-listing-api-1.md): Use this React example to start building your first app on DeSo
+- [Frontend: NextJS Example](https://docs.deso.org/frontend-nextjs-example.md): DeSo Frontend Starter for NextJS and React apps
+- [Backend: Config](https://docs.deso.org/deso-backend/configuration.md): Overview of the configuration flags for running your own backend
+- [Onboarding](https://docs.deso.org/deso-backend/configuration/onboarding.md): Description of flags related to the Onboarding proces and starter DESO
+- [Phone Number Verification](https://docs.deso.org/deso-backend/configuration/phone-number-verification.md): Description of flags related to verifying phone numbers with Twilio
+- [Global State](https://docs.deso.org/deso-backend/configuration/global-state.md): Description of flags related to your node's global state database
+- [Admins](https://docs.deso.org/deso-backend/configuration/admins.md): Description of flags related to admin access on your node.
+- [Web Security](https://docs.deso.org/deso-backend/configuration/web-security.md): Description of flags related to your node's web security
+- [Media](https://docs.deso.org/deso-backend/configuration/media.md): Description of flags related to uploading media on your node
+- [Images](https://docs.deso.org/deso-backend/configuration/media/images.md): Description of flags related to uploading images on your node
+- [Videos](https://docs.deso.org/deso-backend/configuration/media/videos.md): Description of flags related to uploading videos on your node
+- [Hot Feed](https://docs.deso.org/deso-backend/configuration/hot-feed.md): Description of flags related to running the hot feed routine on your node
+- [Selling $DESO](https://docs.deso.org/deso-backend/configuration/selling-usddeso.md): Description of flags related to selling DESO on your Node
+- [Wyre - Buy with USD](https://docs.deso.org/deso-backend/configuration/selling-usddeso/wyre-buy-with-usd.md): Description of flags related to selling DESO for BTC with Wyre on your Node
+- [Buy with BTC](https://docs.deso.org/deso-backend/configuration/selling-usddeso/buy-with-btc.md): Description of flags related to selling DESO for BTC on your Node
+- [Buy with ETH](https://docs.deso.org/deso-backend/configuration/selling-usddeso/buy-with-eth.md): Description of flags related to selling DESO for ETH on your Node
+- [Analytics](https://docs.deso.org/deso-backend/configuration/analytics.md): Description of flags related to tracking user analytics on your node
+- [Emails](https://docs.deso.org/deso-backend/configuration/emails.md): Description of flags related to sending emails on your node
+- [Supply Monitoring](https://docs.deso.org/deso-backend/configuration/supply-monitoring.md): Description of flags related to running supply monitoring on your node
+- [Construct: API](https://docs.deso.org/deso-backend/construct-transactions.md): Descriptions of all Transaction Construction Endpoints
+- [Social Transactions API](https://docs.deso.org/deso-backend/construct-transactions/social-transactions-api.md): Description of endpoints used to construct Social Transactions on the DeSo blockchain
+- [NFT Transactions API](https://docs.deso.org/deso-backend/construct-transactions/nft-transactions-api.md): Description of endpoints used to construct NFT Transactions on the DeSo blockchain
+- [Financial Transactions API](https://docs.deso.org/deso-backend/construct-transactions/financial-transactions-api.md): Description of endpoints used to construct Financial Transactions on the DeSo blockchain
+- [Derived Keys Transaction API](https://docs.deso.org/deso-backend/construct-transactions/derived-keys-transaction-api.md): Description of endpoints used to construct Derived Key Transactions on the DeSo blockchain
+- [DeSo Tokens Transactions API](https://docs.deso.org/deso-backend/construct-transactions/dao-transactions-api.md): Description of endpoints used to construct DAO Transactions on the DeSo blockchain
+- [Associations Transactions API](https://docs.deso.org/deso-backend/construct-transactions/associations-transactions-api.md): Description of endpoints to construct Associations Transactions on the DeSo blockchain
+- [Access Groups API](https://docs.deso.org/deso-backend/construct-transactions/access-groups-api.md)
+- [Data: API](https://docs.deso.org/deso-backend/api.md)
+- [Admin Endpoints](https://docs.deso.org/deso-backend/api/admin-endpoints.md)
+- [Associations Endpoints](https://docs.deso.org/deso-backend/api/associations-endpoints.md): Description of endpoints used in querying for associations
+- [DeSo Tokens Endpoints](https://docs.deso.org/deso-backend/api/dao-endpoints.md): Description of endpoints used for creating and on-chain trading of DeSo Tokens.
+- [Media Endpoints](https://docs.deso.org/deso-backend/api/media-endpoints.md): Description of endpoints used to manage media uploads for posts on the DeSo blockchain
+- [Miner Endpoints](https://docs.deso.org/deso-backend/api/miner-endpoints.md): Description of endpoints used to get data related to mining on the DeSo blockchain
+- [Notification Endpoints](https://docs.deso.org/deso-backend/api/notification-endpoints.md): Description of endpoints used to get notification data on the DeSo blockchain
+- [NFT Endpoints](https://docs.deso.org/deso-backend/api/nft-endpoints.md): Description of endpoints used to get data related to posts on the DeSo blockchain
+- [Social Endpoints](https://docs.deso.org/deso-backend/api/social-endpoints.md): Description of endpoints used to get social data on the DeSo blockchain
+- [Referral Endpoints](https://docs.deso.org/deso-backend/api/referral-endpoints.md): Description of endpoints used to get referral data
+- [Tutorial Endpoints](https://docs.deso.org/deso-backend/api/tutorial-endpoints.md): Description of endpoints used to get data related to tutorials on the DeSo blockchain
+- [Meta Data Endpoints](https://docs.deso.org/deso-backend/api/backend-api.md)
+- [Transaction Spending Limits Endpoints](https://docs.deso.org/deso-backend/api/transaction-spending-limits-endpoints.md): Description of endpoints used to get data related to transaction spending limits on the DeSo blockchain
+- [User Endpoints](https://docs.deso.org/deso-backend/api/user-endpoints.md): Description of endpoints used to get data related to users and profiles on the DeSo blockchain
+- [Post Endpoints](https://docs.deso.org/deso-backend/api/post-endpoints.md): Description of endpoints used to get data related to posts on the DeSo blockchain
+- [Messages Endpoints](https://docs.deso.org/deso-backend/api/messages-endpoints.md)
+- [Access Group Endpoints](https://docs.deso.org/deso-backend/api/access-group-endpoints.md)
+- [Transactions: API](https://docs.deso.org/deso-backend/transaction-utilities.md)
+- [Exchange Listing: API](https://docs.deso.org/deso-exchange-listings/exchange-listing-api.md)
+- [Node: Setup](https://docs.deso.org/deso-nodes/setup.md): Description of steps required to download and start your node
+- [Node: Staying Up-To-Date](https://docs.deso.org/deso-nodes/node-staying-up-to-date.md)
+- [Node: FAQ](https://docs.deso.org/deso-nodes/running-a-node.md): Description of frequently asked questions on Deso nodes
+- [Run a Validator](https://docs.deso.org/deso-validators/run-a-validator.md): Instructions on how to stake/unstake $DESO and run a validator
+- [What is Openfund?](https://docs.deso.org/openfund/what-is-openfund.md)
+- [Openfund Tokenomics](https://docs.deso.org/openfund/openfund-tokenomics.md)
+- [Openfund Governance](https://docs.deso.org/openfund/openfund-governance.md)
+- [Algorithmic Trading](https://docs.deso.org/openfund/algorithmic-trading.md)
+- [The DeSo Python SDK](https://docs.deso.org/openfund/the-deso-python-sdk.md)
+- [Getting Help from the Community](https://docs.deso.org/openfund/the-deso-python-sdk/getting-help-from-the-community.md)
+- [Creating DeSo Testnet Accounts](https://docs.deso.org/openfund/the-deso-python-sdk/creating-deso-testnet-accounts.md)
+- [Debugging Tips and Code Walkthrough](https://docs.deso.org/openfund/the-deso-python-sdk/debugging-tips-and-code-walkthrough.md)
+- [Write Blockchain Bots with AI](https://docs.deso.org/openfund/the-deso-python-sdk/write-blockchain-bots-with-ai.md)
+- [Market-Making Bots](https://docs.deso.org/openfund/the-deso-python-sdk/market-making-bots.md)
+- [Social AI Agents](https://docs.deso.org/openfund/the-deso-python-sdk/social-ai-agents.md)
+- [AI-Generating Your Code](https://docs.deso.org/openfund/the-deso-python-sdk/ai-generating-your-code.md)
+- [How Do the Advanced AMMs Work?](https://docs.deso.org/openfund/how-do-the-advanced-amms-work.md)
+- [The Crypto Social Network](https://docs.deso.org/focus/the-crypto-social-network.md)
+- [Next-Generation Token Mechanics](https://docs.deso.org/focus/next-generation-token-mechanics.md)
+- [Launching Your Token](https://docs.deso.org/focus/next-generation-token-mechanics/launching-your-token.md)
+- [How the Order-Book AMMs Work](https://docs.deso.org/focus/next-generation-token-mechanics/how-the-order-book-amms-work.md)
+- [Crypto-Native Monetization](https://docs.deso.org/focus/crypto-native-monetization.md)
+- [Focus Tokenomics](https://docs.deso.org/focus/focus-tokenomics.md)
+- [The Social Airdrop](https://docs.deso.org/focus/the-social-airdrop.md)
+- [Decentralizing Social Media](https://docs.deso.org/focus/decentralizing-social-media.md)
+- [Contact US](https://docs.deso.org/contact-and-media/contact-us.md)
+- [Reporting an Account or Post](https://docs.deso.org/contact-and-media/reporting-an-account-or-post.md)
+- [什么是DeSo? (What is DeSo?)](https://docs.deso.org/zhong-wen/shi-mo-shi-deso-what-is-deso.md)
+- [愿景 (The Vision)](https://docs.deso.org/zhong-wen/yuan-jing-the-vision.md)
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://docs.deso.org/readme.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

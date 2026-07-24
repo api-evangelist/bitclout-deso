@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/deso-protocol/rosetta-deso, https://docs.deso.org
+standards:
+- id: rosetta-api
+  conforms: true
+  evidence: Official rosetta-deso implementation of the Coinbase Rosetta blockchain
+    standard for exchange/wallet integration (github.com/deso-protocol/rosetta-deso).
+- id: graphql
+  conforms: true
+  evidence: Live GraphQL endpoint at graphql-prod.deso.com/graphql (introspection
+    responds).
+- id: oauth2
+  conforms: false
+  evidence: Authentication is derived-key transaction signing, not OAuth2.
+- id: openid-connect
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors returned as {"error":"..."} JSON, not application/problem+json.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: No /.well-known/security.txt (node returns SPA HTML fallback).
+- id: json-api
+  conforms: false
+- id: openapi
+  conforms: false
+  evidence: Backend exposes routes via Go (routes/server.go); no published OpenAPI
+    definition.

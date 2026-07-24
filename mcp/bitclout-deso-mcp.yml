@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://github.com/deso-protocol/deso-mcp
+server:
+  name: deso-mcp
+  description: Official Model Context Protocol server for DeSo blockchain development —
+    exposes DeSo API documentation, SDK guidance, code generation, architecture, and
+    UI/GraphQL helpers to AI coding agents.
+  repository: https://github.com/deso-protocol/deso-mcp
+  transport: http
+  transports:
+  - http
+  - stdio
+  install: npm install
+  run: npm start
+  default_url: http://localhost:3000
+tools:
+- name: deso_api_explorer
+  description: Explore DeSo backend API endpoints and documentation.
+- name: deso_js_guide
+  description: Guidance for setting up and using the deso-protocol JavaScript/TypeScript SDK.
+- name: generate_deso_code
+  description: Generate DeSo integration code snippets.
+- name: explain_deso_architecture
+  description: Explain DeSo node architecture and design patterns.
+- name: repository_search
+  description: Search across DeSo documentation and repositories.
+- name: read_repository_document
+  description: Read a specific DeSo documentation/repository document.
+- name: deso_debugging_guide
+  description: Debugging assistance for DeSo integrations.
+- name: deso_implementation_patterns
+  description: Best-practice implementation patterns for DeSo apps.
+- name: deso_ui_components
+  description: Guide to the DeSo UI component library.
+- name: deso_graphql_helper
+  description: Build and explain GraphQL queries against the DeSo GraphQL API.

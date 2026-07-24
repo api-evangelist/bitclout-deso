@@ -1,0 +1,14 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/deso-protocol/deso-ui
+families:
+- name: DeSo UI Library
+  repository: https://github.com/deso-protocol/deso-ui
+  language: typescript
+  framework: React
+  license: MIT
+  official: true
+  description: Official DeSo UI component library — prebuilt, DeSo-native React
+    components (profiles, posts, feeds, wallet, media) for assembling decentralized
+    social interfaces on top of the DeSo backend and Identity services.
+  guide: deso_ui_components (via the official deso-mcp server)

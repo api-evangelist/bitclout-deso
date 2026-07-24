@@ -1,9 +1,29 @@
 aid: bitclout-deso
 name: BitClout (DeSo)
-description: 'BitClout (DeSo) is a company surfaced as a portfolio company of pantera-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'DeSo (Decentralized Social, formerly BitClout) is an open-source layer-1
+  blockchain purpose-built for storage-heavy applications such as social media, NFTs,
+  creator coins, and on-chain financial primitives. It exposes a permissionless HTTP
+  JSON API served by any DeSo node (the public node runs at node.deso.org/api/v0),
+  a GraphQL endpoint, the DeSo Identity service for derived-key authentication and
+  transaction signing, a client-side TypeScript SDK (deso-protocol), a Python SDK,
+  a Rosetta API implementation for exchange integrations, and an official MCP server
+  for AI-assisted development. Originally launched as the BitClout prototype and backed
+  by Pantera Capital, the project rebranded to DeSo and now powers a broad ecosystem
+  of decentralized social apps.'
 url: https://raw.githubusercontent.com/api-evangelist/bitclout-deso/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://node.deso.org/assets/deso/camelcase_logo_og.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,11 +32,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Crypto
-apis: []
+- Blockchain
+- Decentralized Social
+- Web3
+- Social Media
+- NFT
+- Creator Economy
+apis:
+- name: DeSo Backend API
+  description: The HTTP JSON API served by every DeSo node — data endpoints (profiles,
+    posts, users, NFTs, creator/DAO coins, messages) plus transaction-construction
+    endpoints. The public node is node.deso.org; transactions are signed via the DeSo
+    Identity service and submitted back to the node.
+  humanURL: https://docs.deso.org/deso-backend/api
+  baseURL: https://node.deso.org/api/v0
+  tags:
+  - Blockchain
+  - Social
+  - NFT
+  - Crypto
+  properties:
+  - type: Documentation
+    url: https://docs.deso.org/deso-backend/api
+  - type: APIReference
+    url: https://docs.deso.org/deso-backend/construct-transactions
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,4 +67,51 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://bitclout.com/
+  url: https://www.deso.com/
+- type: DeveloperPortal
+  url: https://docs.deso.org/
+- type: Documentation
+  url: https://docs.deso.org/deso-backend/api
+- type: APIReference
+  url: https://docs.deso.org/deso-backend/construct-transactions
+- type: GettingStarted
+  url: https://docs.deso.org/deso-tutorial-build-apps
+- type: GitHubOrganization
+  url: https://github.com/deso-protocol
+- type: Roadmap
+  url: https://docs.deso.org/deso-roadmap
+- type: Support
+  url: https://discord.gg/HFxzBkW5BJ
+- type: GraphQL
+  url: https://graphql-prod.deso.com/graphql
+- type: Packages
+  url: packages/bitclout-deso-packages.yml
+- type: SDKs
+  url: packages/bitclout-deso-packages.yml
+- type: MCPServer
+  url: mcp/bitclout-deso-mcp.yml
+- type: LLMsTxt
+  url: llms/bitclout-deso-llms.txt
+- type: Authentication
+  url: authentication/bitclout-deso-authentication.yml
+- type: Conventions
+  url: conventions/bitclout-deso-conventions.yml
+- type: Conformance
+  url: conformance/bitclout-deso-conformance.yml
+- type: Lifecycle
+  url: lifecycle/bitclout-deso-lifecycle.yml
+- type: ChangeLog
+  url: changelog/bitclout-deso-changelog.yml
+- type: Sandbox
+  url: sandbox/bitclout-deso-sandbox.yml
+- type: Components
+  url: components/bitclout-deso-components.yml
+- type: DataModel
+  url: data-model/bitclout-deso-data-model.yml
+- type: DomainSecurity
+  url: security/bitclout-deso-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

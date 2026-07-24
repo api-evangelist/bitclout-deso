@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.deso.org/deso-roadmap
+versioning:
+  scheme: uri-path
+  current: v0
+  docs: https://docs.deso.org/deso-backend/api
+  notes: The public backend API is served under /api/v0. DeSo is open-source; node
+    operators run pinned releases of deso-protocol/core and deso-protocol/backend.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal published deprecation/Sunset (RFC 8594) policy found.
+sla:
+  url: null
+  uptime_target: null
+  notes: node.deso.org is a public community node; there is no published SLA. Operators
+    run their own nodes for production guarantees.
+status_page: null
+roadmap: https://docs.deso.org/deso-roadmap
+deprecated_operations: []

@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.deso.org/deso-tutorial-build-apps
+testnet:
+  name: DeSo Testnet
+  node: https://test.deso.org
+  api_base: https://test.deso.org/api/v0
+  notes: The DeSo SDKs (deso-protocol JS and the Python SDK) default to node.deso.org
+    (mainnet) and can be pointed at test.deso.org to construct, sign, and submit
+    transactions against the testnet.
+identity:
+  service: https://identity.deso.org
+  notes: The DeSo Identity service supports testnet accounts for approving derived
+    keys and signing test transactions.
+detection:
+  field: IsTestnet
+  endpoint: /api/v0/get-app-state
+  notes: get-app-state returns IsTestnet (false on node.deso.org / mainnet, true on
+    a testnet node) so clients can confirm which network they are on.
+test_values:
+  notes: DeSo has no test card numbers or magic identifiers; testing is done by
+    generating real keypairs on the testnet where DESO has no monetary value.

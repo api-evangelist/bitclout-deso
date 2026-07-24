@@ -1,0 +1,58 @@
+generated: '2026-07-18'
+method: derived
+source: https://docs.deso.org/deso-backend/api
+notes: Derived from the DeSo backend API response object reference (docs.deso.org/deso-backend/api).
+  Entities are keyed by public keys and content hashes rather than integer ids.
+entities:
+- name: ProfileEntryResponse
+  key: PublicKeyBase58Check
+  key_format: Base58Check public key
+  description: A user profile — every public key may have one profile (username,
+    description, verification, creator-coin and DAO-coin data).
+- name: PostEntryResponse
+  key: PostHashHex
+  key_format: hex content hash
+  description: A post — body text, media, engagement metrics (likes, diamonds,
+    reposts), optional NFT data and royalty maps.
+- name: BalanceEntryResponse
+  key: HODLerPublicKeyBase58Check + CreatorPublicKeyBase58Check
+  description: A holding of one user's creator coin or DAO coin by another user.
+- name: NFTEntryResponse
+  key: PostHashHex + SerialNumber
+  description: A single NFT serial — ownership, bid amounts, unlockable content.
+- name: NFTCollectionResponse
+  key: PostHashHex
+  description: Aggregate view over all serial numbers of an NFT post.
+- name: TransactionSpendingLimitResponse
+  key: derived-key
+  description: The scoped permission object attached to a derived key (allowed
+    transaction types and spend limits).
+relationships:
+- from: ProfileEntryResponse
+  to: PostEntryResponse
+  type: has_many
+  via: PosterPublicKeyBase58Check
+- from: PostEntryResponse
+  to: ProfileEntryResponse
+  type: belongs_to
+  via: PosterPublicKeyBase58Check
+- from: PostEntryResponse
+  to: PostEntryResponse
+  type: has_many
+  via: ParentStakeID (comments/reposts)
+- from: BalanceEntryResponse
+  to: ProfileEntryResponse
+  type: belongs_to
+  via: CreatorPublicKeyBase58Check
+- from: NFTEntryResponse
+  to: PostEntryResponse
+  type: belongs_to
+  via: PostHashHex
+- from: NFTCollectionResponse
+  to: NFTEntryResponse
+  type: has_many
+  via: PostHashHex
+- from: TransactionSpendingLimitResponse
+  to: ProfileEntryResponse
+  type: belongs_to
+  via: owner PublicKeyBase58Check

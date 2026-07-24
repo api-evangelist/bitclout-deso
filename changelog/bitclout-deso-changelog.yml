@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/deso-protocol/deso-js/releases
+scheme: semver
+component: deso-protocol (deso-js SDK)
+current_version: 3.4.2
+notes: DeSo publishes no single unified changelog; the canonical dated release stream
+  is the deso-protocol/deso-js SDK GitHub releases. Core/backend node changes ship
+  via deso-protocol/core and deso-protocol/backend commits and DIPs (deso-protocol/dips).
+entries:
+- version: 3.4.2
+  date: '2026-03-20'
+- version: 3.4.1
+  date: '2025-05-23'
+- version: 3.4.0
+  date: '2025-05-16'
+- version: 3.3.9
+  date: '2025-05-05'
+- version: 3.3.8
+  date: '2025-01-17'
+- version: 3.3.7
+  date: '2024-09-19'

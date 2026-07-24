@@ -1,0 +1,50 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.deso.org/deso-backend/api
+docs: https://docs.deso.org/deso-tutorial-build-apps
+authentication:
+  style: derived-key transaction signing via DeSo Identity (no API keys / OAuth)
+  ref: authentication/bitclout-deso-authentication.yml
+request:
+  transport: HTTP JSON
+  method: Most endpoints are POST with a JSON body, including read/query endpoints
+    (parameters are passed in the body, not the query string).
+  content_type: application/json
+  base_url: https://node.deso.org/api/v0
+transaction_flow:
+  pattern: construct -> sign -> submit
+  steps:
+  - Call a construct endpoint (e.g. submit-post, create-nft, send-deso) to get an
+    unsigned transaction hex.
+  - Sign the transaction with a derived key via the Identity service.
+  - Submit the signed transaction hex to /api/v0/submit-transaction.
+  notes: Because each transaction is uniquely signed and consumes on-chain nonces,
+    there is no HTTP idempotency-key header; replay protection is handled at the
+    blockchain layer.
+idempotency:
+  supported: false
+  notes: No Idempotency-Key header. Write safety is provided by transaction signing
+    and on-chain nonce/UTXO semantics rather than an HTTP idempotency contract.
+pagination:
+  style: cursor-seek
+  notes: List endpoints page via an opaque last-seen cursor rather than page numbers.
+  params:
+  - LastPostHashHex (get-posts-stateless / get-posts-for-public-key)
+  - PostHashHex + Offset (get-single-post comments)
+  - LastPublicKeyBase58Check (get-hodlers-for-public-key)
+  - NumToFetch / NumToSkip (various list endpoints)
+error_envelope:
+  format: json
+  shape: '{"error": "<message>"}'
+  notes: Errors return a non-2xx HTTP status with a JSON body carrying a single "error"
+    string; DeSo does not implement RFC 9457 problem+json.
+metadata:
+  block_height_field: BlockHeight
+  app_state_endpoint: /api/v0/get-app-state
+versioning:
+  scheme: uri-path
+  current: v0
+  ref: lifecycle/bitclout-deso-lifecycle.yml
+rate_limits:
+  notes: Public nodes may apply per-IP rate limiting; operators can run their own node
+    to remove limits. No published numeric limits.
