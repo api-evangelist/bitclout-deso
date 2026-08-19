@@ -4,9 +4,8 @@ status: published
 source: https://github.com/deso-protocol/deso-mcp
 server:
   name: deso-mcp
-  description: Official Model Context Protocol server for DeSo blockchain development —
-    exposes DeSo API documentation, SDK guidance, code generation, architecture, and
-    UI/GraphQL helpers to AI coding agents.
+  description: Official Model Context Protocol server for DeSo blockchain development — exposes DeSo API
+    documentation, SDK guidance, code generation, architecture, and UI/GraphQL helpers to AI coding agents.
   repository: https://github.com/deso-protocol/deso-mcp
   transport: http
   transports:
@@ -36,3 +35,12 @@ tools:
   description: Guide to the DeSo UI component library.
 - name: deso_graphql_helper
   description: Build and explain GraphQL queries against the DeSo GraphQL API.
+deployment:
+  mode: none
+  endpoint: http://localhost:3000
+  verified: probed
+  probe: dead
+  note: the endpoint this manifest claimed did not answer; recorded as none rather than deleted so the
+    claim stays auditable
+  checked: '2026-08-12'
+  source: catalog MCP census
