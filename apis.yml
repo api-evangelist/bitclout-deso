@@ -53,7 +53,7 @@ tags:
 - Blockchain
 - Decentralized Social
 - Web3
-- Social-Media
+- Social Media
 - NFT
 - Creator Economy
 tags_raw:
@@ -65,6 +65,7 @@ tags_raw:
 - Social Media
 - NFT
 - Creator Economy
+- Social-Media
 apis:
 - name: DeSo Backend API
   description: The HTTP JSON API served by every DeSo node — data endpoints (profiles,
